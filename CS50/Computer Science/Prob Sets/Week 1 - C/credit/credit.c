@@ -21,10 +21,10 @@ long calculate_Checksum(long number)
     do
     {
         tempNum1 /= 10;
-        long double_digit = 2*(tempNum1 % 10);
+        long double_digit = 2 * (tempNum1 % 10);
         if (double_digit > 9)
         {
-                sum = sum + (double_digit % 10) + (double_digit / 10);
+            sum = sum + (double_digit % 10) + (double_digit / 10);
         }
         else
         {
@@ -36,7 +36,7 @@ long calculate_Checksum(long number)
 
     //sum
     long checksum = sum;
-    for(int j = 0; tempNum2 > 0; j++)
+    for (int j = 0; tempNum2 > 0; j++)
     {
         checksum = checksum + (tempNum2 % 10);
         tempNum2 /= 100;
@@ -70,37 +70,37 @@ int main(void)
     // assign 1st 2 digit of the card number to a variable
     if (sum1 % 10 == 0)
     {
-    int num = number / pow(10, c - 2);
+        int num = number / pow(10, c - 2);
 
         if (num > 9)
         {
-            switch(num)
+            switch (num)
             {
-            case 51:
-            case 52:
-            case 53:
-            case 54:
-            case 55:
-                printf("Master Card\n");
-                break;
-            case 34:
-            case 37:
-                printf("American Express\n");
-                break;
-            default:
-                num /= 10;
-                if (num == 4)
-                {
-                    printf("Visa\n");
-                }
-                else
-                    printf("Invalid\n");
-                break;
+                case 51:
+                case 52:
+                case 53:
+                case 54:
+                case 55:
+                    printf("MASTERCARD\n");
+                    break;
+                case 34:
+                case 37:
+                    printf("AMEX\n");
+                    break;
+                default:
+                    num /= 10;
+                    if (num == 4)
+                    {
+                        printf("VISA\n");
+                    }
+                    else
+                        printf("INVALID\n");
+                    break;
             }
         }
     }
     else
     {
-        printf("Invalid\n");
+        printf("INVALID\n");
     }
 }
