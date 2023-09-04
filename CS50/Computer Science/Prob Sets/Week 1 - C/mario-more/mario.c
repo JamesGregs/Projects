@@ -16,7 +16,7 @@ int main(void)
 
     for (int i = 0; i < x; i++)
     {
-        for (int s = 0; s < x - i; s++)
+        for (int s = 1; s < x - i; s++)
         {
             printf(" ");
         }
@@ -29,6 +29,6 @@ int main(void)
         {
             printf("#");
         }
-        printf("  \n");
+        printf("\n");
     }
 }
