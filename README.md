@@ -1,2 +1,2 @@
 # Projects
-Containing all the projects files including source codes, datasets and other files necessary for data science.
+Containing all project files including source codes that I created, datasets and other necessary files.
