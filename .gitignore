@@ -1,0 +1,4 @@
+# Ignore specific files
+venv
+.vscode
+requirements.txt
