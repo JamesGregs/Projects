@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort Algorithm
+
+How do you know?: Based on the runtime, when sorted or at lower bound the runtime is as fast as sort2. But, is 18 times slower when run in random 50k.
+
+sort2 uses: Merge Sort Algorithm
+
+How do you know?: Fastest runtime compared to sort 1 and sort 2. Also, runtime for random 50k is as fast as sorted 50k.
+
+sort3 uses: Selection Sort Algorithm
+
+How do you know?: The runtime for random 50k rows and sorted 50k rows are almost similar. The upper bound and lower bound of selection sort are both n^2.
